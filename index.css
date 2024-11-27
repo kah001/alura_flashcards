@@ -1,0 +1,58 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 30px;
+}
+
+main .card .conteudo {
+    border: 3px solid #E5047E;
+    padding: 30px 15px;
+    width: 360px;
+    height: 200px;
+    background-color: #303030;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+
+
+main .card .conteudo .botao-categoria {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    backface-visibility: hidden;
+}
+
+main .card .conteudo .botao-categoria h1 {
+    font-size: 15px;
+}
+
+main .card .conteudo .pergunta {
+    font-size: 25px;
+    text-align: center;
+}
+
+main .card .conteudo .resposta {
+    font-size: 20px;
+    text-align: center;
+}
+
+.card.active .conteudo {
+    transform: rotateY(180deg);
+}
+
+.pergunta, .resposta {
+    backface-visibility: hidden;
+}
+
+.resposta {
+    transform: rotateY(180deg);
+}
